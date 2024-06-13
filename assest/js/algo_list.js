@@ -19,5 +19,13 @@ const algorithms_Data = [
         "text": "Selection Sort Visualiser",
         "redirect_page": "selection_sort.html",
         "content_id" : 3078
+    },
+
+    {
+        "id": "1265",
+        "label": "Sliding Window",
+        "text": "Sliding Window Visualiser",
+        "redirect_page": "sliding_window.html",
+        "content_id" : 1265
     }
 ];
