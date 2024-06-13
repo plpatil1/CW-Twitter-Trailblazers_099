@@ -9,6 +9,7 @@ const data = [
     "Space complexity": "As per your DSA/Algorithm"
   },
   {
+
     "content_id": 2183,
     "title": "Queue",
     "overview": `A Queue Data Structure is a fundamental concept in computer science used for storing and managing data in a specific order. It follows the principle of “First in, First out” (FIFO), where the first element added to the queue is the first one to be removed. Queues are commonly used in various algorithms and applications for their simplicity and efficiency in managing data flow.
@@ -31,6 +32,34 @@ const data = [
     "Time Complexities": `<b>Best case complexity </b>: O(1)<br>
         <b>Average case complexity </b>: O(log n)<br>
         <b>Worst case complexity </b>: O(log n)`
+  }, {
+    "content_id": 2078,
+    "title": "Bubble Sort Visualiser",
+    "overview": "Visualising Bubble sort Algorithm",
+    "operations": "As per your DSA/Algorithm",
+    "usage": "As per your DSA/Algorithm",
+    "time complexity": "As per your DSA/Algorithm",
+    "Space complexity": "As per your DSA/Algorithm"
+  },
+  {
+    "content_id": 3078,
+    "title": "Selection Sort Visualiser",
+    "overview": "Visualising Selection sort Algorithm",
+    "operations": "As per your DSA/Algorithm",
+    "usage": "As per your DSA/Algorithm",
+    "time complexity": "As per your DSA/Algorithm",
+    "Space complexity": "As per your DSA/Algorithm"
+  },
+
+  {
+    "content_id": 1265,
+    "title": "Sliding WindowVisualiser",
+    "overview": "Visualising Sliding Window Algorithm",
+    "operations": "As per your DSA/Algorithm",
+    "usage": "As per your DSA/Algorithm",
+    "time complexity": "As per your DSA/Algorithm",
+    "Space complexity": "As per your DSA/Algorithm"
+
   }
 ];
 
