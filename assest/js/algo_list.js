@@ -7,6 +7,20 @@ const algorithms_Data = [
         "content_id" : 1
     },
     {
+
+        "id": "2183",
+        "label": "Queue",
+        "text": "Operates on a First In, First Out (FIFO) principle",
+        "redirect_page": "queue.html",
+        "content_id" : 2183
+    },
+    {
+        "id": "3183",
+        "label": "Binary Search",
+        "text": "Repeatedly dividing the search interval in half.",
+        "redirect_page": "binary_search.html",
+        "content_id" : 3183
+    }, {
         "id": "2078",
         "label": "Bubble Sort",
         "text": "Bubble Sort Visualiser",
@@ -27,5 +41,6 @@ const algorithms_Data = [
         "text": "Sliding Window Visualiser",
         "redirect_page": "sliding_window.html",
         "content_id" : 1265
+
     }
 ];

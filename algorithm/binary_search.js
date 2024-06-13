@@ -1,28 +1,72 @@
-$(document).ready(function () {
-    $('#inputForm').submit(function (event) {
+let msg_box  =document.getElementById("message")
+let span_in_binary_search = document.getElementById("span_in_binary_search");
+
+
+let sppeed_control = document.getElementById("algo_sppeed")
+let speed = (32-sppeed_control.value)*100
+let first_run = true;
+
+sppeed_control.addEventListener('input',()=>{
+    speed = (32-sppeed_control.value)*100
+    //alert(speed)
+})
+
+
+let random_array_generate = document.getElementById("random_array_generate")
+random_array_generate.addEventListener("click", () => {
+    let randomArray = generateRandomArray(16, 100);
+    let randomTarget = randomArray[Math.floor(Math.random() * randomArray.length)];
+    document.getElementById('arrayInput').value = randomArray.join(',');
+    document.getElementById('targetInput').value = randomTarget;
+})
+
+function generateRandomArray(size, max) {
+    let arr = [];
+    while (arr.length < size) {
+        let num = Math.floor(Math.random() * max) + 1;
+        if (!arr.includes(num)) {
+            arr.push(num);
+        }
+    }
+    return arr;
+}
+
+if(first_run){
+    span_in_binary_search.classList.add("mt-5","p-5","font-weight-bold");
+    span_in_binary_search.style.fontSize = '30px'
+    span_in_binary_search.style.fontWeight = '500'
+    span_in_binary_search.innerHTML = "Enter Your Array or Create Random array for Binary Search"
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('inputForm').addEventListener('submit', function (event) {
         event.preventDefault();
-
-        // Get inputs
-        let arrayInput = $('#arrayInput').val().split(',').map(Number);
-        let target = Number($('#targetInput').val());
-
-        // Clear previous results
-        $('#arrayContainer').empty();
-        $('#info').text('');
-        $('#message').text('');
-
-        // Validate inputs
-        if (arrayInput.some(isNaN) || isNaN(target)) {
-            $('#message').text('Please enter valid numbers.');
+        span_in_binary_search.style.display='none'
+        
+        let arrayInput = document.getElementById('arrayInput').value.split(',').map(Number);
+        let target = Number(document.getElementById('targetInput').value);
+        let arrayInput_duplicate = [...new Set(arrayInput)];
+        if (arrayInput.length!=arrayInput_duplicate.length) {
+            document.getElementById('message').innerText = 'Duplicates Numbers are not Allowed';
             return;
         }
-
-        // Sort the array
+        document.getElementById('arrayContainer').innerHTML = '';
+        document.getElementById('info').innerText = '';
+        document.getElementById('message').innerText = '';
+        
+        if (arrayInput.some(isNaN) || isNaN(target)) {
+            document.getElementById('message').innerText = 'Please enter valid numbers.';
+            return;
+        }
+        
         arrayInput.sort((a, b) => a - b);
 
-        // Display the sorted array
         arrayInput.forEach((value, index) => {
-            $('#arrayContainer').append(`<div class="array-element" id="elem-${index}">${value}</div>`);
+            let elem = document.createElement('div');
+            elem.className = 'array-element';
+            elem.id = `elem-${index}`;
+            elem.textContent = value;
+            document.getElementById('arrayContainer').appendChild(elem);
         });
 
         // Perform binary search
@@ -36,49 +80,50 @@ function binarySearch(array, target) {
     let resultIndex = -1;
 
     function highlightElements(low, mid, high) {
-        $('.array-element').removeClass('highlight low high hidden');
-        for (let i = 0; i < array.length; i++) {
-            if (i < low || i > high) {
-                $(`#elem-${i}`).addClass('hidden');
-            } else {
-                $(`#elem-${i}`).removeClass('hidden');
+        document.querySelectorAll('.array-element').forEach((elem, index) => {
+            elem.classList.remove('highlight', 'low', 'high', 'hidden');
+            if (index < low || index > high) {
+                elem.classList.add('hidden');
             }
-        }
-        $(`#elem-${low}`).addClass('low');
-        $(`#elem-${mid}`).addClass('highlight');
-        $(`#elem-${high}`).addClass('high');
+        });
+        document.getElementById(`elem-${low}`).classList.add('low');
+        document.getElementById(`elem-${high}`).classList.add('high');
+        document.getElementById(`elem-${mid}`).classList.add('highlight');
     }
 
     function updateInfo(low, mid, high) {
-        $('#info').html(`Low: ${low}, Mid: ${mid}, High: ${high}`);
+        document.getElementById('info').style.fontWeight = 600
+        document.getElementById('info').innerHTML = `Low Index: ${low}<br> Middle Index: ${mid}<br> High Index: ${high}`;
     }
 
     function searchStep() {
-        if (low > high) {
+        msg_box.classList.remove("alert","alert-danger","alert-success","font-weight-bold")
+        if (low > high || resultIndex !== -1) {
             if (resultIndex !== -1) {
-                $('#message').text(`Target found at index ${resultIndex}.`);
+                let resultIndex_f = document.getElementById(`elem-${resultIndex}`)
+                resultIndex_f.classList.remove('highlight', 'low', 'high', 'hidden')
+                resultIndex_f.classList.add('animate__animated', 'animate__shakeY')
+                resultIndex_f.classList.add('element_found')
+                msg_box.classList.add("alert","alert-success","font-weight-bold")
+                msg_box.innerHTML = `Element found at index : <b>${resultIndex}</b>`
             } else {
-                $('#message').text('Target not found.');
+                msg_box.classList.add("alert","alert-danger","font-weight-bold")
+                msg_box.innerText = 'Element not Present in array.'
             }
-            return;
+            return
         }
-
-        let mid = Math.floor((low + high) / 2);
-        highlightElements(low, mid, high);
-        updateInfo(low, mid, high);
-
+        let mid = Math.floor((low + high) / 2)
+        highlightElements(low, mid, high)
+        updateInfo(low, mid, high)
         if (array[mid] === target) {
-            resultIndex = mid;
-            high = mid - 1; // Continue to search on the left side
+            resultIndex = mid
+            high = mid - 1
         } else if (array[mid] < target) {
-            low = mid + 1;
+            low = mid + 1
         } else {
-            high = mid - 1;
+            high = mid - 1
         }
-
-        setTimeout(() => {
-            searchStep();
-        }, 1000); // Delay for visualization
+        setTimeout(searchStep, speed)
     }
 
     searchStep();
