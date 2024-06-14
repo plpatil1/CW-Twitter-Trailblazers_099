@@ -1,23 +1,21 @@
 ## Algorithm Visualiser
 
 
-### Introduction
+#### Introduction
 
 This project is a web-based Algorithm Visualizer that helps users understand how different sorting algorithms and data structures work. Through interactive animations, users can see how each algorithm works on a set of data and explore the underlying concepts.
 
 This project was a collaborative effort completed in five days (June 11th - 16th, 2024) to showcase the skills we've acquired through past learning experiences.
 
-### Project Type
+#### Project Type
 
 Frontend
 
-### Deplolyed App
+#### Deplolyed App
 
 Frontend: https://www.netlify.com
 
-### Directory Structure
-
-# CW-Twitter-Trailblazers_099
+#### Directory Structure
 
 * [algorithm/](./CW-Twitter-Trailblazers_099/algorithm)
   * [Sliding_window.js](./CW-Twitter-Trailblazers_099/algorithm/Sliding_window.js)
@@ -56,17 +54,17 @@ Frontend: https://www.netlify.com
 
 
 
-### Video Walkthrough of the project
+#### Video Walkthrough of the project
 
 a very short video walkthough of all of the features:
 
 
 
-### Video Walkthrough of the codebase
+#### Video Walkthrough of the codebase
 
 a very short video walkthough of codebase [ 1 - 5 minutes ]:
 
-### Features
+#### Features
 List out the key features of your application.
 
 - Quick Sort
