@@ -1,7 +1,7 @@
 ## Algorithm Visualiser
 
 
-#### Introduction
+### Introduction
 
 This project is a web-based Algorithm Visualizer that helps users understand how different sorting algorithms and data structures work. Through interactive animations, users can see how each algorithm works on a set of data and explore the underlying concepts.
 
@@ -64,7 +64,9 @@ a very short video walkthough of all of the features:
 
 a very short video walkthough of codebase [ 1 - 5 minutes ]:
 
-#### Features
+### Features
+
+
 List out the key features of your application.
 
 - Quick Sort
@@ -78,7 +80,7 @@ List out the key features of your application.
 - Sliding Window 
 
 
-### Usage
+#### Usage
 
 1. Clone the repository using Git
     ````git clone https://your-github-repo.com/algorithm-visualizer.git```
@@ -87,7 +89,7 @@ List out the key features of your application.
 Refer https://getbootstrap.com/docs/5.3/getting-started/download/ for further details.
 
 
-## Technology Stack
+#### Technology Stack
 
 - HTML
 - CSS
@@ -95,7 +97,7 @@ Refer https://getbootstrap.com/docs/5.3/getting-started/download/ for further de
 - Bootstrap
 
 
-## Feedback
+#### Feedback
 
 Welcome to the Project! We value your feedback and suggestions.
 Please open an issue if you have any feedback, suggestions, or bug reports. We appreciate your input! 
