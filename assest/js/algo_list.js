@@ -42,6 +42,22 @@ const algorithms_Data = [
         "image":"banner_5.png",
         "content_id" : 1265
 
+
+    },
+    {
+        "id": "4078",
+        "label": "Merge Sort",
+        "text": "Merge Sort Visualiser",
+        "redirect_page": "merge_sort.html",
+        "content_id" : 4078
+    },
+    {
+        "id": "5078",
+        "label": "Linked List",
+        "text": "Linked List Visualiser",
+        "redirect_page": "linked_list.html",
+        "content_id" : 5078
+
     },{
         "id": "3183",
         "label": "Binary Search",
@@ -49,5 +65,6 @@ const algorithms_Data = [
         "redirect_page": "binary_search.html",
         "image":"banner_4.png",
         "content_id" : 3183
+
     }
 ];
