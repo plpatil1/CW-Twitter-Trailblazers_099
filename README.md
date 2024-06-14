@@ -17,53 +17,43 @@ Frontend: https://www.netlify.com
 
 ### Directory Structure
 
-\dirtree{%
-  . 1 CW-Twitter-Trailblazers_099/ .
-  . 2 algorithm/ .
-  . 3 Sliding_window.js .
-  . 3 binary_search.js .
-  . 3 bubble_sort.js .
-  . 3 linked_list.js .
-  . 3 merge_sort.js .
-  . 3 queue.js .
-  . 3 quick_sort.js .
-  . 3 selection_sort.js .
-  . 3 stack.js .
-  . 3 template.js .
-  . 2 assest/ .
-  . 3 css/ .
-  . 4 style.css .
-  . 3 image/ .
-  . 4 banner_1.png .
-  . 4 banner_2.png .
-  . 4 banner_3.png .
-  . 4 banner_4.png .
-  . 4 banner_5.png .
-  . 4 banner_6.png .
-  . 4 banner_7.png .
-  . 4 queue copy.png .
-  . 4 queue.png .
-  . 4 stack.png .
-  . 3 js/ .
-  . 4 Algo_content.js .
-  . 4 algo_list.js .
-  . 4 common.js .
-  . 4 home.js .
-  . 4 sidebar.js .
-  . 2 README.md .
-  . 2 binary_search.html .
-  . 2 bubble_sort.html .
-  . 2 index.html .
-  . 2 linked_list.html .
-  . 2 logo.png .
-  . 2 merge_sort.html .
-  . 2 queue.html .
-  . 2 quick_sort.html .
-  . 2 selection_sort.html .
-  . 2 sliding_window.html .
-  . 2 stack.html .
-  . 2 template.html .
-}
+# CW-Twitter-Trailblazers_099
+
+* [algorithm/](./CW-Twitter-Trailblazers_099/algorithm)
+  * [Sliding_window.js](./CW-Twitter-Trailblazers_099/algorithm/Sliding_window.js)
+  * [binary_search.js](./CW-Twitter-Trailblazers_099/algorithm/binary_search.js)
+  * [bubble_sort.js](./CW-Twitter-Trailblazers_099/algorithm/bubble_sort.js)
+  * [linked_list.js](./CW-Twitter-Trailblazers_099/algorithm/linked_list.js)
+  * [merge_sort.js](./CW-Twitter-Trailblazers_099/algorithm/merge_sort.js)
+  * [queue.js](./CW-Twitter-Trailblazers_099/algorithm/queue.js)
+  * [quick_sort.js](./CW-Twitter-Trailblazers_099/algorithm/quick_sort.js)
+  * [selection_sort.js](./CW-Twitter-Trailblazers_099/algorithm/selection_sort.js)
+  * [stack.js](./CW-Twitter-Trailblazers_099/algorithm/stack.js)
+  * [template.js](./CW-Twitter-Trailblazers_099/algorithm/template.js)
+* [assest/](./CW-Twitter-Trailblazers_099/assest)
+  * [css/](./CW-Twitter-Trailblazers_099/assest/css)
+    * [style.css](./CW-Twitter-Trailblazers_099/assest/css/style.css)
+  * [image/](./CW-Twitter-Trailblazers_099/assest/image)
+  * [js/](./CW-Twitter-Trailblazers_099/assest/js)
+    * [Algo_content.js](./CW-Twitter-Trailblazers_099/assest/js/Algo_content.js)
+    * [algo_list.js](./CW-Twitter-Trailblazers_099/assest/js/algo_list.js)
+    * [common.js](./CW-Twitter-Trailblazers_099/assest/js/common.js)
+    * [home.js](./CW-Twitter-Trailblazers_099/assest/js/home.js)
+    * [sidebar.js](./CW-Twitter-Trailblazers_099/assest/js/sidebar.js)
+* [README.md](./CW-Twitter-Trailblazers_099/README.md)
+* [binary_search.html](./CW-Twitter-Trailblazers_099/binary_search.html)
+* [bubble_sort.html](./CW-Twitter-Trailblazers_099/bubble_sort.html)
+* [index.html](./CW-Twitter-Trailblazers_099/index.html)
+* [linked_list.html](./CW-Twitter-Trailblazers_099/linked_list.html)
+* [logo.png](./CW-Twitter-Trailblazers_099/logo.png)
+* [merge_sort.html](./CW-Twitter-Trailblazers_099/merge_sort.html)
+* [queue.html](./CW-Twitter-Trailblazers_099/queue.html)
+* [quick_sort.html](./CW-Twitter-Trailblazers_099/quick_sort.html)
+* [selection_sort.html](./CW-Twitter-Trailblazers_099/selection_sort.html)
+* [sliding_window.html](./CW-Twitter-Trailblazers_099/sliding_window.html)
+* [stack.html](./CW-Twitter-Trailblazers_099/stack.html)
+* [template.html](./CW-Twitter-Trailblazers_099/template.html)
+
 
 
 ### Video Walkthrough of the project
