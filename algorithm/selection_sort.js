@@ -1,8 +1,32 @@
 var selection_sort_container = document.querySelector(".ss_bars_container");
 var input_numbers = document.getElementById("input_numbers");
 var sort_button = document.getElementById("sort_button");
-var speed_select = document.getElementById("speed_select");
-var ms = parseInt(speed_select.value); // Initial speed based on selection
+
+
+let sppeed_control = document.getElementById("algo_sppeed")
+let speed = (32-sppeed_control.value)*100
+sppeed_control.addEventListener('input',()=>{
+    speed = (32-sppeed_control.value)*100
+    //alert(speed)
+})
+
+
+let random_array_generate = document.getElementById("random_array_generate")
+random_array_generate.addEventListener("click", () => {
+    let randomArray = generateRandomArray(13, 100);
+    document.getElementById('input_numbers').value = randomArray.join(',');
+})
+
+function generateRandomArray(size, max) {
+    let arr = [];
+    while (arr.length < size) {
+        let num = Math.floor(Math.random() * max) + 1;
+        if (!arr.includes(num) && num>5) {
+            arr.push(num);
+        }
+    }
+    return arr;
+}
 
 function renderBars(array) {
     selection_sort_container.innerHTML = ""; // Clear existing bars
@@ -57,13 +81,13 @@ async function selectionSort(array) {
         sso_bars[i].style.backgroundColor = "#feb737";
         sso_bars[min_idx].style.backgroundColor = "#feb737";
 
-        await sleep(ms);
+        await sleep(speed);
         
-        sso_bars[i].style.backgroundColor = "black";
+        sso_bars[i].style.backgroundColor = "#2fb45d";
 
-        await sleep(ms);
+        await sleep(speed);
     }
-    sso_bars[0].style.backgroundColor = "black";
+    sso_bars[0].style.backgroundColor = "#2fb45d";
 }
 
 sort_button.addEventListener("click", async function () {
@@ -75,13 +99,6 @@ sort_button.addEventListener("click", async function () {
         return; 
     }
 
-    // Update speed based on selection
-    ms = parseInt(speed_select.value);
-
     // Call selectionSort
     await selectionSort(numbers.slice()); 
-});
-
-speed_select.addEventListener("change", function () {
-    ms = parseInt(speed_select.value); // Update speed based on selection
 });

@@ -5,17 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"  rel="stylesheet">
     <link rel="stylesheet" href="./assest/css/style.css">
+    <link rel="stylesheet" href="./assest/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <style>
         .selection_sort_container {
             max-width: 1300px;
@@ -24,13 +22,16 @@
 
         .ss_bars_container {
             width: 100%;
-            height: 400px;
+            height: 450px;
             display: flex;
+            text-align: center;
             align-items: baseline;
+            padding-bottom: 10px;
         }
 
         .ss_bar {
-            border: 1px solid black;
+            padding-top: 2px;
+            border-radius: 0px 0px 10px 10px;
             width: 10px;
             height: 0;
             background-color: aqua;
@@ -39,14 +40,15 @@
         }
 
         .ss_bars_container {
-            border: 1px solid black;
+            border: 2px solid #FF8364;
+            border-radius: 5px;
         }
     </style>
 </head>
 
 <body style="background-color: #EDF7FA;">
     <!-- ***** Header Start ***** -->
-    <header>
+    <header id="header_section">
         <div class="conatiner-fluid d-none d-lg-block  border-bottom" style="background-color: #FF8364;">
             <div class="container-lg p-3">
                 <div class="p-5 pt-0 pb-0 ">
@@ -85,7 +87,7 @@
     <div class="container-fluid">
         <div class="container_new">
             <div class="row">
-                <div class="col-lg-3 d-none d-lg-block">
+                <div class="col-lg-3 d-none d-lg-block" id="sidebar_section">
                     <div class="overflow-auto pt-3 pb-3">
                         <div class="d-flex flex-column flex-md-row ">
                             <div id="radio-buttons-container" class="list-group list-group-radio d-grid gap-2 border-0">
@@ -93,34 +95,29 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-9">
-                    <div class="card mt-3">
-                        <!-- Title of DSA and Algorith & small Desp -->
-                        <div class="card-header" style="background-color: #5F6CAF;color:white;">
-                            <h5 id="algo_title">Visualizer</h5>
+                <div class="col-lg-9" id="playground_section">
+                    <div class="card mt-3" id="playground_card">
+                      <!-- Title of DSA and Algorith & small Desp -->
+                      <div class="card-header" style="background-color: #5F6CAF;color:white;">
+                        <div class="row">
+                          <div class="col">
+                            <h5 class="mt-2" id="algo_title">Visualizer</h5>
+                          </div>
+                          <div class="col text-end">
+                            <button class="btn text-end" is_full="0" id="maximize_area"><span class="material-symbols-outlined">
+                              fullscreen
+                              </span></button>
+                          </div>
                         </div>
+                      </div>
                         <!-- Title of DSA and Algorith & small Desp -->
                         <div class="card-body" id="visualizer_play_ground">
 
 
                             <div class="selection_sort_container">
                                 <div class="row mt-3">
-                                    <div class="col-md-6">
-                                        <div class="input-group mb-3">
-                                            <input type="text" id="input_numbers" class="form-control"
-                                                placeholder="Enter comma-separated numbers to sort">
-                                            <button id="sort_button" class="btn btn-primary">Sort</button>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="speed_select" class="form-label">Speed:</label>
-                                            <select id="speed_select" class="form-select">
-                                                <option value="200">Fast</option>
-                                                <option value="1000" selected>Normal</option>
-                                                <option value="2000">Slow</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
+                                    
+                                    <div class="col-md-12">
                                         <div class="ss_bars_container"></div>
                                     </div>
                                 </div>
@@ -128,9 +125,35 @@
 
 
                         </div>
+                        <div class="card-footer">
+                           
+                                <div class="row">
+                                    
+                                  <div class="col-md-6 offset-md-3">
+                                    <div class="row">
+                                      <div class="col-12 mb-2">
+                                        <div class="row">
+                                          <div class="col-md-4">
+                                            <label for="">Speed</label>
+                                            <input type="range" class="form-range" value="15" min="1" max="30" id="algo_sppeed">
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-12">
+                                        <div class="input-group mb-3">
+                                          <input type="text" id="input_numbers" class="form-control" placeholder="Enter comma-separated numbers to sort">
+                                          <button id="random_array_generate" class="btn btn-warning">Random Arr</button>
+                                          <button id="sort_button" class="btn btn-primary">Sort</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                  
+                        </div>
                     </div>
                     <!-- About DSA & Algorithm -->
-                    <div class="card mt-3">
+                    <div class="card mt-3" id="info_section">
                         <div class="card-body" id="output"></div>
                     </div>
                     <!-- About DSA & Algorithm -->
@@ -161,6 +184,7 @@
 <script src="./algorithm/selection_sort.js"></script>
 
 <!--Common JS Scripts -->
+<script src="./assest/js/common.js"></script>
 <script src="./assest/js/algo_list.js"></script>
 <script src="./assest/js/sidebar.js"></script>
 <script src="./assest/js/Algo_content.js"></script>

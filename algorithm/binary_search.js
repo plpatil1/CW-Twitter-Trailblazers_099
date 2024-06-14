@@ -33,7 +33,7 @@ function generateRandomArray(size, max) {
 
 if(first_run){
     span_in_binary_search.classList.add("mt-5","p-5","font-weight-bold");
-    span_in_binary_search.style.fontSize = '30px'
+    span_in_binary_search.style.fontSize = '20px'
     span_in_binary_search.style.fontWeight = '500'
     span_in_binary_search.innerHTML = "Enter Your Array or Create Random array for Binary Search"
 }

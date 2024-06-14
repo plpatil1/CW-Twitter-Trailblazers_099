@@ -9,6 +9,24 @@ document.addEventListener("DOMContentLoaded", () => {
     let windowLength = 0;
     let currentIndex = 0;
   
+    let random_array_generate = document.getElementById("random_array_generate")
+    random_array_generate.addEventListener("click", () => {
+        let randomArray = generateRandomArray(13, 100);
+        document.getElementById('inputArray').value = randomArray.join(',');
+    })
+    
+    function generateRandomArray(size, max) {
+        let arr = [];
+        while (arr.length < size) {
+            let num = Math.floor(Math.random() * max) + 1;
+            if (!arr.includes(num) && num>5) {
+                arr.push(num);
+            }
+        }
+        return arr;
+    }
+
+
     startButton.addEventListener("click", () => {
       array = inputArray.value.split(",").map(Number);
       windowLength = parseInt(windowSize.value);
