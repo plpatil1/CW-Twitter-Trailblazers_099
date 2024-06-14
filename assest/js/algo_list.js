@@ -49,5 +49,12 @@ const algorithms_Data = [
         "text": "Merge Sort Visualiser",
         "redirect_page": "merge_sort.html",
         "content_id" : 4078
+    },
+    {
+        "id": "5078",
+        "label": "Linked List",
+        "text": "Linked List Visualiser",
+        "redirect_page": "linked_list.html",
+        "content_id" : 5078
     }
 ];
