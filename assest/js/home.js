@@ -3,11 +3,14 @@ cards_data = ''
 //console.log("hii")
 algorithms_Data.forEach(item => {
     cards_data += `
-    <div class="col-lg-4 col-md-3 p-3">
+    <div class="col-md-4 col-lg-3 mb-3 mt-3">
         <div class="card">
-            <div class="card-body p-3">
-              <a href="${item.redirect_page}">${item.label}</a>
+            <a href="${item.redirect_page}">
+            <img class="card-img-top" src="./assest/image/${item.image}">
+            <div class="card-body">
+                <p class="card-text text-center">${item.label}</p>
             </div>
+            </a>
         </div>
     </div>`;
 });

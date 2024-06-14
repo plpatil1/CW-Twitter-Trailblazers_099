@@ -2,8 +2,31 @@
 var bubble_sort_container = document.querySelector(".bs_bars_container");
 var input_numbers = document.getElementById("input_numbers");
 var sort_button = document.getElementById("sort_button");
-var speed_select = document.getElementById("speed_select");
-var ms = parseInt(speed_select.value); // Initial speed based on selection
+
+let sppeed_control = document.getElementById("algo_sppeed")
+let speed = (32-sppeed_control.value)*100
+sppeed_control.addEventListener('input',()=>{
+    speed = (32-sppeed_control.value)*100
+    //alert(speed)
+})
+
+
+let random_array_generate = document.getElementById("random_array_generate")
+random_array_generate.addEventListener("click", () => {
+    let randomArray = generateRandomArray(13, 100);
+    document.getElementById('input_numbers').value = randomArray.join(',');
+})
+
+function generateRandomArray(size, max) {
+    let arr = [];
+    while (arr.length < size) {
+        let num = Math.floor(Math.random() * max) + 1;
+        if (!arr.includes(num) && num>5) {
+            arr.push(num);
+        }
+    }
+    return arr;
+}
 
 function renderBars(array) {
     bubble_sort_container.innerHTML = ""; // Clear existing bars
@@ -53,15 +76,15 @@ async function bubbleSort(array) {
                 bso_bars[j].style.backgroundColor = "#feb737";
                 bso_bars[j + 1].style.backgroundColor = "#feb737";
 
-                await sleep(ms);
+                await sleep(speed);
             }
         }
         l--;
-        bso_bars[l].style.backgroundColor = "black";
+        bso_bars[l].style.backgroundColor = "#2fb45d";
 
-        await sleep(ms);
+        await sleep(speed);
     }
-    bso_bars[0].style.backgroundColor = "black";
+    bso_bars[0].style.backgroundColor = "#2fb45d";
 }
 
 sort_button.addEventListener("click", async function () {
@@ -75,13 +98,6 @@ sort_button.addEventListener("click", async function () {
         return; // Prevent sorting if input is invalid
     }
 
-    // Update speed based on selection
-    ms = parseInt(speed_select.value);
-
     // Call bubbleSort
     await bubbleSort(numbers.slice()); // Use a copy to avoid modifying original array
-});
-
-speed_select.addEventListener("change", function () {
-    ms = parseInt(speed_select.value); // Update speed based on selection
 });

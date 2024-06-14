@@ -1,8 +1,32 @@
 var merge_sort_container = document.querySelector(".ms_bars_container");
 var input_numbers = document.getElementById("input_numbers");
 var sort_button = document.getElementById("sort_button");
-var speed_select = document.getElementById("speed_select");
-var ms = parseInt(speed_select.value); // Initial speed based on selection
+
+
+let sppeed_control = document.getElementById("algo_sppeed")
+let speed = (32-sppeed_control.value)*100
+sppeed_control.addEventListener('input',()=>{
+    speed = (32-sppeed_control.value)*100
+    //alert(speed)
+})
+
+
+let random_array_generate = document.getElementById("random_array_generate")
+random_array_generate.addEventListener("click", () => {
+    let randomArray = generateRandomArray(13, 100);
+    document.getElementById('input_numbers').value = randomArray.join(',');
+})
+
+function generateRandomArray(size, max) {
+    let arr = [];
+    while (arr.length < size) {
+        let num = Math.floor(Math.random() * max) + 1;
+        if (!arr.includes(num) && num>5) {
+            arr.push(num);
+        }
+    }
+    return arr;
+}
 
 function renderBars(array) {
     merge_sort_container.innerHTML = ""; // Clear existing bars
@@ -56,7 +80,7 @@ async function merge(array, start, mid, end) {
     while (i < n1 && j < n2) {
         if (left[i] <= right[j]) {
             array[k] = left[i];
-            ms_bars[k].style.height = (left[i] / Math.max(...array)) * 100 + "%";
+            ms_bars[k].style.height = (left[i] /Math.max(...array)) * 100 + "%";
             ms_bars[k].innerHTML = left[i];
             ms_bars[k].style.backgroundColor = "brown"; // Different color for sorted part
             i++;
@@ -68,7 +92,7 @@ async function merge(array, start, mid, end) {
             j++;
         }
         k++;
-        await sleep(ms);
+        await sleep(speed);
     }
 
     while (i < n1) {
@@ -78,7 +102,7 @@ async function merge(array, start, mid, end) {
         ms_bars[k].style.backgroundColor = "brown"; // Different color for sorted part
         i++;
         k++;
-        await sleep(ms);
+        await sleep(speed);
     }
 
     while (j < n2) {
@@ -88,11 +112,11 @@ async function merge(array, start, mid, end) {
         ms_bars[k].style.backgroundColor = "brown"; // Different color for sorted part
         j++;
         k++;
-        await sleep(ms);
+        await sleep(speed);
     }
 
     for (let i = start; i <= end; i++) {
-        ms_bars[i].style.backgroundColor = "black";
+        ms_bars[i].style.backgroundColor = "#2fb45d";
     }
 }
 
@@ -104,15 +128,7 @@ sort_button.addEventListener("click", async function () {
         alert("Please enter comma-separated numbers only.");
         return;
     }
-
-    // Update speed based on selection
-    ms = parseInt(speed_select.value);
-
     // Call mergeSort
     renderBars(numbers.slice());
     await mergeSort(numbers.slice(), 0, numbers.length - 1);
-});
-
-speed_select.addEventListener("change", function () {
-    ms = parseInt(speed_select.value); // Update speed based on selection
 });
