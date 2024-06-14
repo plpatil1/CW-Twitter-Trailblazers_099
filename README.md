@@ -83,7 +83,7 @@ List out the key features of your application.
 #### Usage
 
 1. Clone the repository using Git
-    ````git clone https://your-github-repo.com/algorithm-visualizer.git```
+````git clone https://your-github-repo.com/algorithm-visualizer.git````
 3. Install Bootstrap
 ````npm install bootstrap@5.3.3````
 Refer https://getbootstrap.com/docs/5.3/getting-started/download/ for further details.
