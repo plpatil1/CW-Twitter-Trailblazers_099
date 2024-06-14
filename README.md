@@ -17,41 +17,53 @@ Frontend: https://www.netlify.com
 
 ### Directory Structure
 
-CW-Twitter-Trailblazers_099/
-┣ algorithm/
-┃ ┣ Sliding_window.js
-┃ ┣ binary_search.js
-┃ ┣ bubble_sort.js
-┃ ┣ linked_list.js
-┃ ┣ merge_sort.js
-┃ ┣ queue.js
-┃ ┣ quick_sort.js
-┃ ┣ selection_sort.js
-┃ ┣ stack.js
-┃ ┗ template.js
-┣ assest/
-┃ ┣ css/
-┃ ┃ ┗ style.css
-┃ ┣ image/
-┃ ┗ js/
-┃   ┣ Algo_content.js
-┃   ┣ algo_list.js
-┃   ┣ common.js
-┃   ┣ home.js
-┃   ┗ sidebar.js
-┣ README.md
-┣ binary_search.html
-┣ bubble_sort.html
-┣ index.html
-┣ linked_list.html
-┣ logo.png
-┣ merge_sort.html
-┣ queue.html
-┣ quick_sort.html
-┣ selection_sort.html
-┣ sliding_window.html
-┣ stack.html
-┗ template.html
+\dirtree{%
+  . 1 CW-Twitter-Trailblazers_099/ .
+  . 2 algorithm/ .
+  . 3 Sliding_window.js .
+  . 3 binary_search.js .
+  . 3 bubble_sort.js .
+  . 3 linked_list.js .
+  . 3 merge_sort.js .
+  . 3 queue.js .
+  . 3 quick_sort.js .
+  . 3 selection_sort.js .
+  . 3 stack.js .
+  . 3 template.js .
+  . 2 assest/ .
+  . 3 css/ .
+  . 4 style.css .
+  . 3 image/ .
+  . 4 banner_1.png .
+  . 4 banner_2.png .
+  . 4 banner_3.png .
+  . 4 banner_4.png .
+  . 4 banner_5.png .
+  . 4 banner_6.png .
+  . 4 banner_7.png .
+  . 4 queue copy.png .
+  . 4 queue.png .
+  . 4 stack.png .
+  . 3 js/ .
+  . 4 Algo_content.js .
+  . 4 algo_list.js .
+  . 4 common.js .
+  . 4 home.js .
+  . 4 sidebar.js .
+  . 2 README.md .
+  . 2 binary_search.html .
+  . 2 bubble_sort.html .
+  . 2 index.html .
+  . 2 linked_list.html .
+  . 2 logo.png .
+  . 2 merge_sort.html .
+  . 2 queue.html .
+  . 2 quick_sort.html .
+  . 2 selection_sort.html .
+  . 2 sliding_window.html .
+  . 2 stack.html .
+  . 2 template.html .
+}
 
 
 ### Video Walkthrough of the project
