@@ -81,10 +81,19 @@ const data = [
     "time complexity": "As per your DSA/Algorithm",
     "Space complexity": "As per your DSA/Algorithm"
 
-  }
+  },
   {
     "content_id": 1078,
     "title": "Quick Sort Visualiser",
+    "overview": "Visualising Quick Sort Algorithm",
+    "operations": "As per your DSA/Algorithm",
+    "usage": "As per your DSA/Algorithm",
+    "time complexity": "As per your DSA/Algorithm",
+    "Space complexity": "As per your DSA/Algorithm"
+
+  },{
+    "content_id": 6078,
+    "title": "Sieve of Eratosthenes Visualizer",
     "overview": "Visualising Quick Sort Algorithm",
     "operations": "As per your DSA/Algorithm",
     "usage": "As per your DSA/Algorithm",

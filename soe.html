@@ -21,79 +21,67 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <style>
-    .merge_sort_container {
-      max-width: 1300px;
+    .soe_container {
+      max-width: 1000px;
       margin: auto;
     }
 
-    .ms_bars_container {
-      width: 100%;
-      height: 450px;
-      display: flex;
-      text-align: center;
-      align-items: baseline;
-      padding-bottom: 10px;
+    .soe_grid {
+      width: 30vw;
+      height: 30vw;
+      margin: auto;
     }
 
-    .ms_bar {
-      padding-top: 2px;
-      border-radius: 0px 0px 10px 10px;
-      width: 10px;
-      height: 0;
+    tr {
+      border: 1px solid black;
+    }
+
+    td {
+      border: 1px solid black;
+    }
+
+    .current_cell {
+      background-color: red;
+      color: white;
+    }
+
+    .not_prime {
       background-color: aqua;
-      display: inline-block;
-      margin: 0 2px;
     }
 
-    .ms_bars_container {
-      border: 2px solid #FF8364;
-      border-radius: 5px;
+    .multiple {
+      background-color: pink;
     }
   </style>
 </head>
 
-<body style="background-color: #EDF7FA;">
+<body style="background-color: #E1F7F5;">
   <!-- ***** Header Start ***** -->
-  <header id="header_section">
-    <div class="conatiner-fluid d-none d-lg-block  border-bottom" style="background-color: #FF8364;">
-      <div class="container-lg p-3">
-        <div class="p-5 pt-0 pb-0 ">
-          <nav class="">
-            <div class="container-fluid">
-              <div class="">
-                <div class="row">
-                  <div class="col">
-                  </div>
-                  <div class="col text-center p-2">
-                    <a href="./index.html"> <img style="width: 100px;" src="./logo.png" alt=""> </a>
-                  </div>
-                  <div class="col nav_2_span p-2  d-flex flex-row-reverse align-self-center gap-4 text-end">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </nav>
-        </div>
+  <header id="header_section" class="mb-0" style="background-color: #1E0342;">
+    <div class="conatiner-fluid  border-bottom border-warning">
+      <div class="container">
+        <nav class="navbar" style="background-color: #1E0342;">
+          <div class="container-fluid">
+            <a href="index.html"> <img class="img-fluid" style="width: 80px;" src="./assest/image/idea_logo_first.gif"
+                alt=""> </a>
+            <button class="navbar-toggler" style="background-color: white;" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span style="color: white;" class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
       </div>
     </div>
-    <nav class="navbar d-lg-none navbar-expand-lg" style="background-color: #FF8364;">
-      <div class="container-fluid p-3">
-        <h1>Logo</h1>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-          aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-    </nav>
   </header>
   <!-- ***** Header End ***** -->
 
 
   <div class="container-fluid">
     <div class="container_new">
-      <div class="row">
+      <div class="row mt-2">
         <div class="col-lg-3 d-none d-lg-block" id="sidebar_section">
-          <div class="overflow-auto pt-3 pb-3">
+          <div class="overflow-auto pt-3 mt-3 pb-3" id="inside_sidebar_section">
             <div class="d-flex flex-column flex-md-row ">
               <div id="radio-buttons-container" class="list-group list-group-radio d-grid gap-2 border-0">
               </div>
@@ -103,12 +91,12 @@
         <div class="col-lg-9" id="playground_section">
           <div class="card mt-3" id="playground_card">
             <!-- Title of DSA and Algorith & small Desp -->
-            <div class="card-header" style="background-color: #5F6CAF;color:white;">
+            <div class="card-header" style="background-color: #0E46A3;color:white;">
               <div class="row">
                 <div class="col">
                   <h5 class="mt-2" id="algo_title">Visualizer</h5>
                 </div>
-                <div class="col text-end">
+                <div class="col text-end d-none d-lg-block">
                   <button class="btn text-end" is_full="0" id="maximize_area"><span class="material-symbols-outlined">
                       fullscreen
                     </span></button>
@@ -118,10 +106,13 @@
             <!-- Title of DSA and Algorith & small Desp -->
             <div class="card-body" id="visualizer_play_ground">
 
-              <div class="merge_sort_container">
+
+              <div class="">
                 <div class="row mt-3">
                   <div class="col-md-12">
-                    <div class="ms_bars_container"></div>
+                    <div class="soe_container">
+                      <table class="soe_grid"></table>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -140,17 +131,16 @@
                       </div>
                     </div>
                     <div class="col-12">
-                      <div class="input-group mb-3">
-                        <input type="text" id="input_numbers" class="form-control"
-                          placeholder="Enter comma-separated numbers to sort">
-                        <button id="random_array_generate" class="btn btn-warning" style="background-color:#99c8cd;border-color:#0d47a3">Random Arr</button>
-                        <button id="sort_button" class="btn btn-primary" style="background-color:#0d47a3;">Sort</button>
+                      <div class="input-group mb-3" style="display: flex;gap:3vw;justify-content: space-between;">
+                        <button id="start_button" class="btn btn-primary"
+                          style="background-color:#0d47a3;border-radius: 3%;">Start</button>
+                        <button id="clear_button" class="btn btn-primary"
+                          style="background-color:#0d47a3;border-radius: 3%;">Clear</button>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-
 
 
             </div>
@@ -170,7 +160,7 @@
   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel"
     style="background-color: wheat;">
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasRightLabel">Sidebar On Mobile</h5>
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Explore More Algorithms!</h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
@@ -184,7 +174,7 @@
 
 </body>
 
-<script src="./algorithm/quick_sort.js"></script>
+<script src="./algorithm/soe.js"></script>
 
 <!--Common JS Scripts -->
 <script src="./assest/js/common.js"></script>

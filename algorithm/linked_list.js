@@ -2,7 +2,7 @@ const container_lll = d3.select("#visualization");
 const svg = container_lll.append("svg")
     .attr("height", "100%")
     .attr("preserveAspectRatio", "xMidYMid meet")
-    .style("background-color", "yellow").attr("width", "100%");
+    .style("background-color", "#e0f7f6").attr("width", "100%");
 
 class Node {
     constructor(data) {
