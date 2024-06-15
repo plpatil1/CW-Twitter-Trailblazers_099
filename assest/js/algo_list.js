@@ -54,7 +54,7 @@ const algorithms_Data = [
         "label": "Linked List",
         "text": "Linked List Visualiser",
         "redirect_page": "linked_list.html",
-        "image":"banner_7.png",
+        "image":"banner_8.png",
         "content_id" : 5078
     },{
         "id": "1078",
