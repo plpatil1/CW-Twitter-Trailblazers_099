@@ -1,11 +1,8 @@
-const container = d3.select("#visualization");
-const svg = container.append("svg")
+const container_lll = d3.select("#visualization");
+const svg = container_lll.append("svg")
     .attr("height", "100%")
     .attr("preserveAspectRatio", "xMidYMid meet")
-    .style("background-color", "yellow");
-
-
-
+    .style("background-color", "yellow").attr("width", "100%");
 
 class Node {
     constructor(data) {
@@ -97,7 +94,7 @@ class LinkedList {
 
         const nodeRadius = 30;
         const nodeMargin = 50;
-        let containerWidth = container.node().clientWidth;
+        let container_lllWidth = container_lll.node().clientWidth;
         let xPos = 50;
         let yPos = 200;
 
@@ -111,7 +108,7 @@ class LinkedList {
         totalWidth += nodeRadius * 2 + nodeMargin; // Space for the null pointer
 
 
-        svg.attr("width", Math.max(containerWidth, totalWidth));
+        svg.attr("width", Math.max(container_lllWidth, totalWidth));
 
 
         svg.append("text")

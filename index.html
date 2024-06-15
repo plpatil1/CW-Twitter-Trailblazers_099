@@ -1,74 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./assest/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <style>
-    .card-text{
+    .card-text {
       font-weight: 700;
     }
+
     .card {
       box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     }
-    .card:hover{
+
+    .card:hover {
       animation: pulse 2s;
     }
-    .card > a  {
+
+    .card>a {
       text-decoration: none;
       color: black;
       font-size: large;
     }
+
+    .parallax .layer {
+      position: absolute;
+    }
+
+    .parallax .p1 {
+      left: 10%;
+      top: 10%;
+    }
+
+    .parallax .p2 {
+      left: 25%;
+      top: 30%;
+    }
+
+    .parallax .p3 {
+      left: 15%;
+      bottom: 30%;
+    }
+
+    .parallax .p4 {
+      left: 10%;
+      bottom: 10%;
+    }
+
+    .parallax .p5 {
+      left: 45%;
+      top: 10%;
+    }
+
+    .parallax .p6 {
+      left: 40%;
+      bottom: 10%;
+    }
+
+    .parallax .p7 {
+      top: 20%;
+      right: 30%;
+    }
+
+    .parallax .p8 {
+      right: 30%;
+      bottom: 20%;
+    }
+
+    .parallax .p9 {
+      right: 10%;
+      top: 10%;
+    }
+
+    .parallax .p10 {
+      top: 45%;
+      right: 20%;
+    }
+
+    .parallax .p11 {
+      bottom: 10%;
+      right: 10%;
+    }
+
+    @media only screen and (max-width: 576px) {
+      .portfolio-info li {
+        display: block;
+        padding: 5px 0;
+      }
+
+      .parallax .p1 {
+        left: 10%;
+        top: 10%;
+      }
+
+      .parallax .p2 {
+        left: 15%;
+        top: 30%;
+      }
+
+      .parallax .p3 {
+        left: 10%;
+        bottom: 30%;
+      }
+
+      .parallax .p4 {
+        left: 10%;
+        bottom: 10%;
+      }
+
+      .parallax .p5 {
+        left: 45%;
+        top: 3%;
+      }
+
+      .parallax .p6 {
+        left: 40%;
+        bottom: 10%;
+      }
+
+      .parallax .p7 {
+        top: 20%;
+        right: 30%;
+      }
+
+      .parallax .p8 {
+        right: 30%;
+        bottom: 20%;
+      }
+
+      .parallax .p9 {
+        right: 10%;
+        top: 5%;
+      }
+
+      .parallax .p10 {
+        top: 45%;
+        right: 10%;
+      }
+
+      .parallax .p11 {
+        bottom: 10%;
+        right: 10%;
+      }
+    }
+
+    .text-rotating-container {
+      font-family: "Caveat", cursive;
+      color: white;
+      font-size: 24px;
+    }
+
+    .text-rotating {
+      display: inline-block;
+      position: relative;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    #code_in_act a {
+      background-color: #febe58;
+      font-family: "Caveat", cursive;
+      color: #1f0343;
+      text-decoration: none;
+      font-size: 24px;
+      box-sizing: border-box;
+      width: 200px;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+    .main_cards{
+      background-color: #1f0343;
+    }
+    .main_cards p{
+      color: #febe58;
+      font-family: "Caveat", cursive;
+      font-size: 24px;
+    }
+
   </style>
 </head>
-<body style="background-color: #EDF7FA;">
-<!-- ***** Header Start ***** -->
-  <header>
-    <div class="conatiner-fluid d-none d-lg-block  border-bottom" style="background-color: #FF8364;">
-      <div class="container-lg p-3">
-        <div class="p-5 pt-0 pb-0 ">
-          <nav class="">
-            <div class="container-fluid">
-              <div class="">
-                <div class="row">
-                  <div class="col">      
-                  </div>
-                  <div class="col text-center p-2">
-                    <a href="./index.html"> <img style="width: 100px;" src="./logo.png" alt=""> </a>
-                  </div>
-                  <div class="col nav_2_span p-2  d-flex flex-row-reverse align-self-center gap-4 text-end">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </nav>
-        </div>
+
+<body style="background-color: #E1F7F5;">
+  <!-- ***** Header Start ***** -->
+  <header class="mb-0" style="background-color: #1E0342;">
+    <div class="conatiner-fluid sticky-top  border-bottom border-warning" style="background-color: #1E0342;">
+      <div class="container">
+        <nav class="navbar " style="background-color: #1E0342;">
+          <div class="container-fluid ">
+            <a href=""> <img class="img-fluid" style="width: 80px;" src="./assest/image/idea_logo_first.gif" alt="">
+            </a>
+            <button class="navbar-toggler" style="background-color: white;" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span style="color: white;" class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
       </div>
     </div>
-    <nav class="navbar d-lg-none navbar-expand-lg" style="background-color: #FF8364;">
-      <div class="container-fluid p-3">
-        <h1>Logo</h1>
+    <div class="container p-5 text-center">
+      <div class="parallax" id="scene" data-relative-input="true">
+        <svg width="27" height="29" data-depth="0.3" class="layer p1" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M21.15625.60099c4.37954 3.67487 6.46544 9.40612 5.47254 15.03526-.9929 5.62915-4.91339 10.30141-10.2846 12.25672-5.37122 1.9553-11.3776.89631-15.75715-2.77856l2.05692-2.45134c3.50315 2.93948 8.3087 3.78663 12.60572 2.22284 4.297-1.5638 7.43381-5.30209 8.22768-9.80537.79387-4.50328-.8749-9.08872-4.37803-12.02821L21.15625.60099z"
+            fill="#FFD15C" fill-rule="evenodd" />
+        </svg>
+        <svg width="26" height="26" data-depth="0.2" class="layer p2" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 3.3541L2.42705 24.5h21.1459L13 3.3541z" stroke="#FF4C60" stroke-width="3" fill="none"
+            fill-rule="evenodd" />
+        </svg>
+        <svg width="30" height="25" data-depth="0.3" class="layer p3" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M.1436 8.9282C3.00213 3.97706 8.2841.92763 14.00013.92796c5.71605.00032 10.9981 3.04992 13.85641 8 2.8583 4.95007 2.8584 11.0491-.00014 16.00024l-2.77128-1.6c2.28651-3.96036 2.28631-8.84002.00011-12.8002-2.2862-3.96017-6.5124-6.40017-11.08513-6.4-4.57271.00018-8.79872 2.43984-11.08524 6.4002l-2.77128-1.6z"
+            fill="#44D7B6" fill-rule="evenodd" />
+        </svg>
+        <svg width="15" height="23" data-depth="0.6" class="layer p4" xmlns="http://www.w3.org/2000/svg">
+          <rect transform="rotate(30 9.86603 10.13397)" x="7" width="3" height="25" rx="1.5" fill="#FFD15C"
+            fill-rule="evenodd" />
+        </svg>
+        <svg width="15" height="23" data-depth="0.2" class="layer p5" xmlns="http://www.w3.org/2000/svg">
+          <rect transform="rotate(30 9.86603 10.13397)" x="7" width="3" height="25" rx="1.5" fill="#6C6CE5"
+            fill-rule="evenodd" />
+        </svg>
+        <svg width="49" height="17" data-depth="0.5" class="layer p6" xmlns="http://www.w3.org/2000/svg">
+          <g fill="#FF4C60" fill-rule="evenodd">
+            <path
+              d="M.5 16.5c0-5.71709 2.3825-10.99895 6.25-13.8567 3.8675-2.85774 8.6325-2.85774 12.5 0C23.1175 5.50106 25.5 10.78292 25.5 16.5H23c0-4.57303-1.90625-8.79884-5-11.08535-3.09375-2.28652-6.90625-2.28652-10 0C4.90625 7.70116 3 11.92697 3 16.5H.5z" />
+            <path
+              d="M23.5 16.5c0-5.71709 2.3825-10.99895 6.25-13.8567 3.8675-2.85774 8.6325-2.85774 12.5 0C46.1175 5.50106 48.5 10.78292 48.5 16.5H46c0-4.57303-1.90625-8.79884-5-11.08535-3.09375-2.28652-6.90625-2.28652-10 0-3.09375 2.28651-5 6.51232-5 11.08535h-2.5z" />
+          </g>
+        </svg>
+        <svg width="26" height="26" data-depth="0.4" class="layer p7" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 22.6459L2.42705 1.5h21.1459L13 22.6459z" stroke="#FFD15C" stroke-width="3" fill="none"
+            fill-rule="evenodd" />
+        </svg>
+        <svg width="19" height="21" data-depth="0.3" class="layer p8" xmlns="http://www.w3.org/2000/svg">
+          <rect transform="rotate(-40 6.25252 10.12626)" x="7" width="3" height="25" rx="1.5" fill="#6C6CE5"
+            fill-rule="evenodd" />
+        </svg>
+        <svg width="30" height="25" data-depth="0.3" data-depth-y="-1.30" class="layer p9"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M29.8564 16.0718c-2.85854 4.95114-8.1405 8.00057-13.85654 8.00024-5.71605-.00032-10.9981-3.04992-13.85641-8-2.8583-4.95007-2.8584-11.0491.00014-16.00024l2.77128 1.6c-2.28651 3.96036-2.28631 8.84002-.00011 12.8002 2.2862 3.96017 6.5124 6.40017 11.08513 6.4 4.57271-.00018 8.79872-2.43984 11.08524-6.4002l2.77128 1.6z"
+            fill="#6C6CE5" fill-rule="evenodd" />
+        </svg>
+        <svg width="47" height="29" data-depth="0.2" class="layer p10" xmlns="http://www.w3.org/2000/svg">
+          <g fill="#44D7B6" fill-rule="evenodd">
+            <path
+              d="M46.78878 17.19094c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36265-9.0893-.26708-11.74616-4.27524-2.65686-4.00817-3.08917-9.78636-1.13381-15.15866l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12693 2.12514 3.20674 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40949 8.48988-8.70673l2.34923.85505z" />
+            <path
+              d="M25.17585 9.32448c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36264-9.0893-.26708-11.74616-4.27525C.16049 11.92447-.27182 6.14628 1.68354.77398l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12692 2.12514 3.20675 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40948 8.48988-8.70672l2.34923.85505z" />
+          </g>
+        </svg>
+        <svg width="33" height="20" data-depth="0.5" class="layer p11" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M32.36774.34317c.99276 5.63023-1.09332 11.3614-5.47227 15.03536-4.37895 3.67396-10.3855 4.73307-15.75693 2.77837C5.76711 16.2022 1.84665 11.53014.8539 5.8999l3.15139-.55567c.7941 4.50356 3.93083 8.24147 8.22772 9.8056 4.29688 1.56413 9.10275.71673 12.60554-2.2227C28.34133 9.98771 30.01045 5.4024 29.21635.89884l3.15139-.55567z"
+            fill="#FFD15C" fill-rule="evenodd" />
+        </svg>
       </div>
-    </nav>
+      <div class="row mb-5">
+        <div class="col-12 mt-5" >
+          <div class="row" style="align-items: baseline;display: flex;">
+            <div class="col-lg-6 text-lg-end animate__animated animate__zoomInLeft">
+            <img src="./assest/image/idea_new_logo.png" style="width: 50%;" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 animate__animated animate__zoomInRight">
+            <div class="text-rotating-container baseline text-lg-start">
+              Visualize How <br><span id="rotating-text" class="text-rotating"
+                style="font-weight: 800; font-size: 1.7em;">Stack</span><br>
+              are Working...
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-12 mt-5 mb-5 animate__animated animate__wobble" id="code_in_act">
+          <a href="#algs_list">See <b>Algorithms</b> in Action ▾ </a>
+        </div>
+      </div>
+
+    </div>
   </header>
-<!-- ***** Header End ***** -->
+  <!-- ***** Header End ***** -->
 
-  <div class="container-fluid">
-    <div class="container">
-      <div class="row mt-5 mb-5 justify-content-center" id="home_page">
-
-
-
-
+  <div class="container-fluid mt-5" id="algs_list">
+    <div class="container mt-5">
+      <div class="row mb-5 mt-5 justify-content-center" id="home_page">
 
       </div>
     </div>
   </div>
 
+
+  <!-- **** sidebar on mobile Start **** --> 
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="background-color: wheat;">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Explore More Algorithms!</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="d-flex flex-column flex-md-row  align-items-center justify-content-center">
+      <div id="radio-buttons-container2" class="list-group list-group-radio d-grid gap-2 border-0">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- **** sidebar on mobile End **** --> 
+
 </body>
 <script src="./assest/js/algo_list.js"></script>
 <script src="./assest/js/home.js"></script>
+<script>
+  let curre_DSA = ''
+  const container_2 = document.getElementById('radio-buttons-container2');
+  let htmlContent_2 = '';
+  algorithms_Data.forEach(item => {
+    htmlContent_2 += `
+      <div class="position-relative">
+        <input class="form-check-input position-absolute top-50 end-0 me-3 fs-5" data-parent-id="${item.id}" type="radio" data-href="${item.redirect_page}" name="listGroupRadioGrid_1" id="${item.id}_1">
+        <label class="list-group-item py-3 pe-5" for="${item.id}_1">
+          <strong class="fw-semibold">${item.label}</strong>
+          <span class="d-block small opacity-75">${item.text}</span>
+        </label>
+      </div>
+    `;
+  });
+
+  container_2.innerHTML = htmlContent_2;
+
+  const radioButtons_2 = document.querySelectorAll('input[name="listGroupRadioGrid_1"]');
+  radioButtons_2.forEach(radio => {
+    radio.addEventListener('change', function () {
+      if (this.checked) {
+        window.location.href = this.getAttribute('data-href')
+      }
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const rotatingText = document.getElementById('rotating-text');
+    const textArray = ['Stack', 'Bubble Sort', 'Queue', 'Merge Sort', 'Sliding Window', 'Quick Sort', 'Binary Search', 'Selection Sort'];
+    let currentIndex = 0;
+    function displayNextWord() {
+      rotatingText.textContent = '';
+      const word = textArray[currentIndex];
+      let charIndex = 0;
+      function typeCharacter() {
+        if (charIndex < word.length) {
+          rotatingText.textContent += word.charAt(charIndex);
+          charIndex++;
+          setTimeout(typeCharacter, 150);
+        } else {
+          currentIndex = (currentIndex + 1) % textArray.length;
+          setTimeout(displayNextWord, 2000);
+        }
+      }
+      typeCharacter();
+    }
+    displayNextWord();
+  });
+
+</script>
+
 </html>
