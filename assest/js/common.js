@@ -14,16 +14,16 @@ const change_area_of_visualization_playgroud = () =>{
         maximize.setAttribute("is_full",1)
         sidebar_section.classList.remove('d-none','d-lg-block')
         sidebar_section.style.display = 'none'
-        header_section.style.display = 'none'
+        //header_section.style.display = 'none'
         info_section.style.display = 'none'
         playground_section.classList.remove("col-lg-9")
         playground_section.classList.add("col-12")
-        playground_card.style.height = (window.innerHeight-30)+"px";
+        playground_card.style.height = (window.innerHeight-110)+"px";
     } else {
         maximize.setAttribute("is_full",0)
         sidebar_section.classList.add('d-none','d-lg-block')
         sidebar_section.style.display = 'block'
-        header_section.style.display = 'block'
+        //header_section.style.display = 'block'
         info_section.style.display = 'block'
         playground_section.classList.remove("col-12")
         playground_section.classList.add("col-lg-9")

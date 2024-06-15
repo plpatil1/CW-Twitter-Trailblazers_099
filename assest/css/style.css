@@ -7,7 +7,7 @@ body {
 }
 #output>p>strong {
     text-transform: uppercase;
-    color: #FF8364;
+    color: #1E0342;
 }
 
 #output>p>b {
@@ -73,15 +73,16 @@ body {
 }
 
 .list-group-radio .form-check-input:checked+.list-group-item {
-  background-color: #FFB677;
-  border-color: #5F6CAF;
-  box-shadow: 0 0 0 2px #5F6CAF;
-  
+  background-color:#febe58;
+  color: black;
+  border-color: #febe58;
+  box-shadow: 0 0 0 2px #febe58;
+  border-left: 8px solid #5ee0e6;
 }
 
 .form-check-input:checked {
-    background-color: #5F6CAF;
-    border-color: #5F6CAF;
+    background-color: #1E0342;
+    border-color: #1E0342;
 }
 
 .list-group-radio .form-check-input[disabled]+.list-group-item,
@@ -95,4 +96,20 @@ body {
   max-width: 1600px;
   margin: auto;
   margin-bottom: 20px;
+}
+
+#offcanvasRight,#inside_sidebar_section{
+  border-radius: 10px;
+}
+
+#inside_sidebar_section{
+  background-color: #1E0342;
+}
+
+#sidebar_section{
+  border-radius: 10px;
+}
+
+#maximize_area{
+ color: white;
 }

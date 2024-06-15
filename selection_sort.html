@@ -40,70 +40,52 @@
         }
 
         .ss_bars_container {
-            border: 2px solid #FF8364;
+            border: 2px solid #1E0342;
             border-radius: 5px;
         }
     </style>
 </head>
 
-<body style="background-color: #EDF7FA;">
+<body style="background-color: #E1F7F5;">
     <!-- ***** Header Start ***** -->
-    <header id="header_section">
-        <div class="conatiner-fluid d-none d-lg-block  border-bottom" style="background-color: #FF8364;">
-            <div class="container-lg p-3">
-                <div class="p-5 pt-0 pb-0 ">
-                    <nav class="">
-                        <div class="container-fluid">
-                            <div class="">
-                                <div class="row">
-                                    <div class="col">
-                                    </div>
-                                    <div class="col text-center p-2">
-                                        <a href="./index.html"> <img style="width: 100px;" src="./logo.png" alt=""> </a>
-                                    </div>
-                                    <div
-                                        class="col nav_2_span p-2  d-flex flex-row-reverse align-self-center gap-4 text-end">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-        <nav class="navbar d-lg-none navbar-expand-lg" style="background-color: #FF8364;">
-            <div class="container-fluid p-3">
-                <h1>Logo</h1>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                    aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+      <header id="header_section" class="mb-0" style="background-color: #1E0342;">
+        <div class="conatiner-fluid  border-bottom border-warning" >
+          <div class="container">
+            <nav class="navbar" style="background-color: #1E0342;">
+              <div class="container-fluid">
+                <a href="index.html"> <img class="img-fluid" style="width: 80px;" src="./assest/image/idea_logo_first.gif" alt=""> </a>
+                <button class="navbar-toggler" style="background-color: white;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
+                  <span style="color: white;" class="navbar-toggler-icon"></span>
                 </button>
-            </div>
-        </nav>
-    </header>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
     <!-- ***** Header End ***** -->
 
 
     <div class="container-fluid">
         <div class="container_new">
-            <div class="row">
+            <div class="row mt-2">
                 <div class="col-lg-3 d-none d-lg-block" id="sidebar_section">
-                    <div class="overflow-auto pt-3 pb-3">
-                        <div class="d-flex flex-column flex-md-row ">
-                            <div id="radio-buttons-container" class="list-group list-group-radio d-grid gap-2 border-0">
-                            </div>
-                        </div>
+                  <div class="overflow-auto pt-3 mt-3 pb-3" id="inside_sidebar_section">
+                    <div class="d-flex flex-column flex-md-row ">
+                      <div id="radio-buttons-container" class="list-group list-group-radio d-grid gap-2 border-0">
+                      </div>
                     </div>
+                  </div>
                 </div>
                 <div class="col-lg-9" id="playground_section">
                     <div class="card mt-3" id="playground_card">
                       <!-- Title of DSA and Algorith & small Desp -->
-                      <div class="card-header" style="background-color: #5F6CAF;color:white;">
+                      <div class="card-header" style="background-color: #0E46A3;color:white;">
                         <div class="row">
                           <div class="col">
                             <h5 class="mt-2" id="algo_title">Visualizer</h5>
                           </div>
-                          <div class="col text-end">
+                          <div class="col text-end d-none d-lg-block">
                             <button class="btn text-end" is_full="0" id="maximize_area"><span class="material-symbols-outlined">
                               fullscreen
                               </span></button>
@@ -167,7 +149,7 @@
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel"
         style="background-color: wheat;">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasRightLabel">Sidebar On Mobile</h5>
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Explore More Algorithms!</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">

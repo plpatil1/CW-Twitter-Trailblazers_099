@@ -4,7 +4,7 @@ cards_data = ''
 algorithms_Data.forEach(item => {
     cards_data += `
     <div class="col-md-4 col-lg-3 mb-3 mt-3">
-        <div class="card">
+        <div class="card main_cards" >
             <a href="${item.redirect_page}">
             <img class="card-img-top" src="./assest/image/${item.image}">
             <div class="card-body">

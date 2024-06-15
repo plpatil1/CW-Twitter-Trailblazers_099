@@ -41,23 +41,6 @@ const algorithms_Data = [
         "redirect_page": "sliding_window.html",
         "image":"banner_5.png",
         "content_id" : 1265
-
-
-    },
-    {
-        "id": "4078",
-        "label": "Merge Sort",
-        "text": "Merge Sort Visualiser",
-        "redirect_page": "merge_sort.html",
-        "content_id" : 4078
-    },
-    {
-        "id": "5078",
-        "label": "Linked List",
-        "text": "Linked List Visualiser",
-        "redirect_page": "linked_list.html",
-        "content_id" : 5078
-
     },{
         "id": "3183",
         "label": "Binary Search",
@@ -67,12 +50,18 @@ const algorithms_Data = [
         "content_id" : 3183
 
     },{
+        "id": "5078",
+        "label": "Linked List",
+        "text": "Linked List Visualiser",
+        "redirect_page": "linked_list.html",
+        "image":"banner_7.png",
+        "content_id" : 5078
+    },{
         "id": "1078",
         "label": "Quick Sort",
         "text": "Quick Sort Visualiser",
         "redirect_page": "quick_sort.html",
         "image":"banner_4.png",
         "content_id" : 1078
-
     }
 ];
