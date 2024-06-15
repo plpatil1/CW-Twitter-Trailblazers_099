@@ -63,5 +63,12 @@ const algorithms_Data = [
         "redirect_page": "quick_sort.html",
         "image":"banner_4.png",
         "content_id" : 1078
+    },{
+        "id": "6078",
+        "label": "Sieve of Eratosthenes",
+        "text": "Sieve of Eratosthenes Visualizer ",
+        "redirect_page": "soe.html",
+        "image":"banner_9.png",
+        "content_id" : 6078
     }
 ];
