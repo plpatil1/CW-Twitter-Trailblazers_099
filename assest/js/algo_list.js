@@ -56,5 +56,12 @@ const algorithms_Data = [
         "redirect_page": "linked_list.html",
         "image":"banner_7.png",
         "content_id" : 5078
-    },
+    },{
+        "id": "1078",
+        "label": "Quick Sort",
+        "text": "Quick Sort Visualiser",
+        "redirect_page": "quick_sort.html",
+        "image":"banner_4.png",
+        "content_id" : 1078
+    }
 ];

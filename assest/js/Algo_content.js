@@ -54,14 +54,14 @@ const data = [
 
   {
     "content_id": 1265,
-    "title": "Sliding WindowVisualiser",
+    "title": "Sliding Window Visualiser",
     "overview": "Visualising Sliding Window Algorithm",
-    "operations": "As per your DSA/Algorithm",
-    "usage": "As per your DSA/Algorithm",
-    "time complexity": "As per your DSA/Algorithm",
-    "Space complexity": "As per your DSA/Algorithm"
-
+    "operations": "The sliding window algorithm is used to solve problems related to arrays and strings by maintaining a subset of elements (the 'window') and sliding it across the dataset to find an optimal solution. It is particularly useful for finding subarrays or substrings that satisfy certain conditions, such as the maximum sum, a specific sum, or a unique set of characters.",
+    "usage": "The sliding window algorithm is commonly used in various scenarios, including:\n1. Finding the maximum or minimum sum of a subarray of a fixed size.\n2. Finding the shortest or longest substring containing all unique characters.\n3. Identifying the subarray with a sum closest to a given value.\n4. Solving problems involving two pointers technique where a window is defined by two indices.",
+    "time complexity": "The time complexity of the sliding window algorithm is generally O(n), where n is the number of elements in the input array or string. This is because each element is typically visited at most twice - once when the window expands and once when it contracts.",
+    "space complexity": "The space complexity of the sliding window algorithm is usually O(1) for fixed-size windows, as only a constant amount of extra space is required. However, if additional data structures (like hash maps or sets) are used to maintain the state within the window, the space complexity could be O(k) where k is the size of the window or the number of unique elements within the window."
   },
+  
   {
     "content_id": 4078,
     "title": "Merge Sort Visualiser",
@@ -76,6 +76,16 @@ const data = [
     "content_id": 5078,
     "title": "Linked List Visualiser",
     "overview": "Visualising Linked List Data Structure",
+    "operations": "As per your DSA/Algorithm",
+    "usage": "As per your DSA/Algorithm",
+    "time complexity": "As per your DSA/Algorithm",
+    "Space complexity": "As per your DSA/Algorithm"
+
+  }
+  {
+    "content_id": 1078,
+    "title": "Quick Sort Visualiser",
+    "overview": "Visualising Quick Sort Algorithm",
     "operations": "As per your DSA/Algorithm",
     "usage": "As per your DSA/Algorithm",
     "time complexity": "As per your DSA/Algorithm",
