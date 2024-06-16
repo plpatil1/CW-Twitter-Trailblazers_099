@@ -63,6 +63,13 @@ const algorithms_Data = [
         "redirect_page": "quick_sort.html",
         "image":"banner_4.png",
         "content_id" : 1078
+    },,{
+        "id": "2265",
+        "label": "Two pointers",
+        "text": "Two Pointer visualizer",
+        "redirect_page": "twopointer.html",
+        "image":"banner_7.png",
+        "content_id" : 2265
     },{
         "id": "6078",
         "label": "Sieve of Eratosthenes",

@@ -26,14 +26,20 @@ const data = [
     "Stack Variations": "<b>Double-Ended Stack (Deque):</b> Allows insertion and deletion from both ends.<br> <b>Circular Stack:</b> A stack implementation where the last position is connected back to the first position, forming a circle.",
     "Real-World Examples of Stacks": "<b>Call Stack:</b> Used by programming languages to keep track of function calls.<br> <b>Browser History:</b> Back and forward navigation in web browsers.<br> <b>Text Editor Undo:</b> Stores the history of changes to enable undo functionality.<br> <b>Balanced Parentheses:</b> Checking balanced parentheses in an expression.<br> <b>Expression Conversion:</b> Converting infix expressions to postfix or prefix forms."
 },
-  {
-    "content_id": 3183,
-    "title": "Binary Search",
-    "Binary Search": `Binary Search is a searching algorithm for finding an element's position in a sorted array. In this approach, the element is always searched in the middle of a portion of an array. <br><i>Binary search can be implemented only on a sorted list of items. If the elements are not sorted already, we need to sort them first.</i>`,
-    "Time Complexities": `<b>Best case complexity </b>: O(1)<br>
-        <b>Average case complexity </b>: O(log n)<br>
-        <b>Worst case complexity </b>: O(log n)`
-  }, {
+{
+  "content_id": 3183,
+  "title": "Binary Search",
+  "overview": "Binary Search is a fundamental algorithm in computer science used for finding an element in a sorted array. It follows the principle of dividing the search interval in half repeatedly until the target value is found or the interval is empty. Binary Search is known for its efficiency and speed, making it a widely used algorithm in various applications.",
+  "What is Binary Search?": "Binary Search is an efficient algorithm for finding an item from a sorted list of items. It works by repeatedly dividing the search interval in half. If the value of the target element is less than the middle element of the interval, the interval is narrowed to the lower half. Otherwise, it is narrowed to the upper half. The process continues until the target element is found or the interval is empty.",
+  "Steps of Binary Search Algorithm": "Step 1: Start with the middle element of the sorted array.\nStep 2: If the middle element is the target value, return its index.\nStep 3: If the target value is less than the middle element, repeat the search on the left half.\nStep 4: If the target value is greater than the middle element, repeat the search on the right half.\nStep 5: Continue until the target value is found or the search interval is empty.",
+  "Properties of Binary Search": "Efficiency: Operates in O(log n) time complexity, making it highly efficient for large datasets.\nRequires Sorted Data: Can only be applied to a sorted array or list.\nDivide and Conquer: Utilizes the divide and conquer strategy by repeatedly dividing the search interval.",
+  "Applications of Binary Search": "Searching in Databases: Used to quickly find records in large databases.\nDictionary Lookups: Efficiently looks up words and their meanings in a dictionary.\nDebugging: Helps in debugging by quickly narrowing down the location of errors in code.\nData Analysis: Used in various data analysis techniques to efficiently search through data.\nGames: Used in games for various search-related functionalities, such as pathfinding.",
+  "Advantages of Using Binary Search": "High Efficiency: Much faster than linear search for large datasets due to its O(log n) time complexity.\nSimplicity: Relatively simple algorithm to understand and implement.\nPredictable Performance: Provides consistent and predictable performance regardless of the dataset size.",
+  "Disadvantages of Using Binary Search": "Requires Sorted Data: The array must be sorted prior to performing the binary search.\nStatic Data: Inefficient for datasets that change frequently due to the need for re-sorting.\nIndex-Based: Only applicable to data structures that allow random access, such as arrays.",
+  "Real-World Examples of Binary Search": "Looking Up Words: Efficiently searching for words in a dictionary.\nLibrary Catalogs: Finding books in a sorted library catalog.\nOnline Shopping: Searching for products in a sorted list of items.\nVersion Control: Finding changes in a sorted list of versions in version control systems.\nStock Prices: Analyzing historical stock prices for a particular date.",
+  "Why is the Time Complexity of Binary Search O(log n)?": "Explanation: Binary Search works by repeatedly dividing the search interval in half. In each step, the size of the interval is halved, leading to a logarithmic reduction in the number of elements to be checked. Therefore, the time complexity is O(log n), where n is the number of elements in the array. The base of the logarithm is 2, but in Big-O notation, the base is not specified because it only affects the constant factor, not the overall complexity."
+}
+, {
     "content_id": 2078,
     "title": "Bubble Sort Visualiser",
     "overview": "Bubble Sort repeatedly swaps adjacent elements if they are in the wrong order, gradually moving the largest element to its correct position.",
@@ -62,7 +68,7 @@ const data = [
 },
   
 {
-  "content_id": 2185,
+  "content_id": 2265,
   "title": "Two Pointer Technique",
   "overview": "The Two Pointer technique is a fundamental concept in computer science used for solving problems that involve searching or processing elements in an array or list. This technique utilizes two pointers that traverse the data structure from different ends or positions to efficiently solve a variety of problems. It is particularly useful for problems involving sorted arrays and for optimizing the time complexity of algorithms. <img style='width:100%' class='img-fluid mt-2' src='./assest/image/two_pointer.png'>",
   "What is Two Pointer Technique?": "The Two Pointer technique is an algorithmic strategy where two pointers are used to iterate through an array or list from different starting points, typically from the beginning and the end. This method is effective for solving problems such as finding pairs that meet certain criteria, merging sorted arrays, and more.",
