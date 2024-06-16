@@ -36,22 +36,17 @@ const data = [
   }, {
     "content_id": 2078,
     "title": "Bubble Sort Visualiser",
-    "overview": "Visualising Bubble sort Algorithm",
-    "operations": "As per your DSA/Algorithm",
-    "usage": "As per your DSA/Algorithm",
-    "time complexity": "As per your DSA/Algorithm",
-    "Space complexity": "As per your DSA/Algorithm"
+    "overview": "Bubble Sort repeatedly swaps adjacent elements if they are in the wrong order, gradually moving the largest element to its correct position.",
+    "time complexity": "<b>BestCase: </b>O(n) - when the array is already sorted.<br> <b>AverageCase: </b> O(n^2) <br><b>WorstCase</b> when the array is sorted in reverse order",
+    "Space complexity": " O(1)"
   },
   {
     "content_id": 3078,
     "title": "Selection Sort Visualiser",
-    "overview": "Visualising Selection sort Algorithm",
-    "operations": "As per your DSA/Algorithm",
-    "usage": "As per your DSA/Algorithm",
-    "time complexity": "As per your DSA/Algorithm",
-    "Space complexity": "As per your DSA/Algorithm"
+    "overview": "Selection Sort repeatedly selects the smallest element from the unsorted portion and swaps it with the first unsorted element.",
+    "time complexity": " O(n^2)",
+    "Space complexity": " O(1)"
   },
-
   {
     "content_id": 1265,
     "title": "Sliding Window",
@@ -84,42 +79,36 @@ const data = [
   {
     "content_id": 4078,
     "title": "Merge Sort Visualiser",
-    "overview": "Visualising Merge Sort Algorithm",
-    "operations": "As per your DSA/Algorithm",
-    "usage": "As per your DSA/Algorithm",
-    "time complexity": "As per your DSA/Algorithm",
-    "Space complexity": "As per your DSA/Algorithm"
+    "overview": "Divides the array into halves recursively, sorts each half, and merges them to achieve a sorted array. ",
+    "time complexity": "O(n log n)",
+    "Space complexity": "O(n) - requires additional memory proportional to the array size"
 
   },
   {
     "content_id": 5078,
     "title": "Linked List Visualiser",
     "overview": "Visualising Linked List Data Structure",
-    "operations": "As per your DSA/Algorithm",
-    "usage": "As per your DSA/Algorithm",
-    "time complexity": "As per your DSA/Algorithm",
-    "Space complexity": "As per your DSA/Algorithm"
+    "operations": "<b>Insert:</b> Add an element to the list.</br> <b>Delete:</b>  Remove an element from the list.",
+    "usage": "<ul> <li>Enter value to add Node to the end of the Linked List</li><li>Enter value and index to add a node at a specific index</li><li>Click delete to delete the last node</li><li>Enter index to delete a node at a specific index</li></ul>",
+    "time complexity": "<b>Insert/ Delete Beginning</b>: O(1)</br><b>Insert/Delete End:</b> O(n)",
+    "Space complexity": " O(n)"
 
   },
   {
     "content_id": 1078,
     "title": "Quick Sort Visualiser",
-    "overview": "Visualising Quick Sort Algorithm",
-    "operations": "As per your DSA/Algorithm",
-    "usage": "As per your DSA/Algorithm",
-    "time complexity": "As per your DSA/Algorithm",
-    "Space complexity": "As per your DSA/Algorithm"
+    "overview": "Chooses a pivot, partitions the array based on pivot values, and recursively sorts subarrays",
+    "time complexity": "<b>AverageCase: </b> O(n log n), <br><b>WorstCase: </b>  O(n^2) - can be improved with optimal pivot selection",
+    "Space complexity":  "O(log n) due to its recursive nature"
 
   },{
     "content_id": 6078,
     "title": "Sieve of Eratosthenes Visualizer",
-    "overview": "Visualising Quick Sort Algorithm",
-    "operations": "As per your DSA/Algorithm",
-    "usage": "As per your DSA/Algorithm",
-    "time complexity": "As per your DSA/Algorithm",
-    "Space complexity": "As per your DSA/Algorithm"
-
-  }
+    "overview": "The Sieve of Eratosthenes algorithm iteratively marks the multiples of each prime number starting from 2, effectively identifying all prime numbers up to a specified limit.",
+    "usage": "Primarily used for finding all prime numbers up to a given limit efficiently.",
+    "time complexity": "O(n log log n), where n is the upper limit of the numbers to be checked for primality.",
+    "Space complexity": "O(n), where n is the upper limit of the numbers to be checked for primality."
+}
 ];
 
 
