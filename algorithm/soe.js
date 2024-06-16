@@ -90,6 +90,15 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }
         }
+        for(let idx = 1; idx< 101; idx++){
+            if(arr[idx] == false){
+                var cur = document.getElementById(`idx${idx}`);
+                cur.classList.add("current_cell")
+            }else{
+                var cur1 = document.getElementById(`idx${idx}`);
+                cur1.classList.remove("not_prime")
+            }
+        }
     }
 
     var start = document.querySelector("#start_button")
