@@ -5,7 +5,7 @@
 
 This project is a web-based Algorithm Visualizer that helps users understand how different sorting algorithms and data structures work. Through interactive animations, users can see how each algorithm works on a set of data and explore the underlying concepts.
 
-This project was a collaborative effort completed in five days (June 11th - 16th, 2024) to showcase the skills we've acquired through past learning experiences.
+This project was a collaborative effort completed in six days (June 11th - 16th, 2024) to showcase the skills we've acquired through past learning experiences.
 
 #### Project Type
 
@@ -17,6 +17,7 @@ Frontend: https://www.netlify.com
 
 #### Directory Structure
 
+
 * [algorithm/](./CW-Twitter-Trailblazers_099/algorithm)
   * [Sliding_window.js](./CW-Twitter-Trailblazers_099/algorithm/Sliding_window.js)
   * [binary_search.js](./CW-Twitter-Trailblazers_099/algorithm/binary_search.js)
@@ -26,8 +27,10 @@ Frontend: https://www.netlify.com
   * [queue.js](./CW-Twitter-Trailblazers_099/algorithm/queue.js)
   * [quick_sort.js](./CW-Twitter-Trailblazers_099/algorithm/quick_sort.js)
   * [selection_sort.js](./CW-Twitter-Trailblazers_099/algorithm/selection_sort.js)
+  * [soe.js](./CW-Twitter-Trailblazers_099/algorithm/soe.js)
   * [stack.js](./CW-Twitter-Trailblazers_099/algorithm/stack.js)
   * [template.js](./CW-Twitter-Trailblazers_099/algorithm/template.js)
+  * [twopointer.js](./CW-Twitter-Trailblazers_099/algorithm/twopointer.js)
 * [assest/](./CW-Twitter-Trailblazers_099/assest)
   * [css/](./CW-Twitter-Trailblazers_099/assest/css)
     * [style.css](./CW-Twitter-Trailblazers_099/assest/css/style.css)
@@ -49,20 +52,24 @@ Frontend: https://www.netlify.com
 * [quick_sort.html](./CW-Twitter-Trailblazers_099/quick_sort.html)
 * [selection_sort.html](./CW-Twitter-Trailblazers_099/selection_sort.html)
 * [sliding_window.html](./CW-Twitter-Trailblazers_099/sliding_window.html)
+* [soe.html](./CW-Twitter-Trailblazers_099/soe.html)
 * [stack.html](./CW-Twitter-Trailblazers_099/stack.html)
 * [template.html](./CW-Twitter-Trailblazers_099/template.html)
+* [twopointer.html](./CW-Twitter-Trailblazers_099/twopointer.html)
 
 
 
 #### Video Walkthrough of the project
 
-a very short video walkthough of all of the features:
+a very short video walkthough of all of the features [7 minutes]:
+https://drive.google.com/file/d/1xq__ABBkInI2OfLUITdPB95hFDx5G8e0/view
 
 
 
 #### Video Walkthrough of the codebase
 
-a very short video walkthough of codebase [ 1 - 5 minutes ]:
+a very short video walkthough of codebase [6 minutes]:
+https://drive.google.com/file/d/1Xt69tNkWxR--V6XBEHyUVEngScYumLSP/view?usp=sharing
 
 ### Features
 
@@ -78,6 +85,7 @@ List out the key features of your application.
 - Queue
 - Binary Search
 - Sliding Window 
+- sieve of Eratosthenes
 
 
 #### Usage
