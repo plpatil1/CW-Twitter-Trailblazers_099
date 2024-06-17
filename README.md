@@ -17,7 +17,6 @@ Frontend: https://www.netlify.com
 
 #### Directory Structure
 
-# CW-Twitter-Trailblazers_099
 
 * [algorithm/](./CW-Twitter-Trailblazers_099/algorithm)
   * [Sliding_window.js](./CW-Twitter-Trailblazers_099/algorithm/Sliding_window.js)
