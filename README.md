@@ -5,7 +5,7 @@
 
 This project is a web-based Algorithm Visualizer that helps users understand how different sorting algorithms and data structures work. Through interactive animations, users can see how each algorithm works on a set of data and explore the underlying concepts.
 
-This project was a collaborative effort completed in five days (June 11th - 16th, 2024) to showcase the skills we've acquired through past learning experiences.
+This project was a collaborative effort completed in six days (June 11th - 16th, 2024) to showcase the skills we've acquired through past learning experiences.
 
 #### Project Type
 
