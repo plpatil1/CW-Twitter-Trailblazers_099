@@ -93,4 +93,8 @@ No external APIs are utilized in this project.
 For the Algorithm Visualizer project, the primary technologies used include HTML, CSS, and JavaScript for creating the foundational structure, styling, and interactivity of the visualizations. These are complemented by Bootstrap for responsive design, D3.js for data-driven manipulation of visuals, and Animate.css for adding dynamic animations.
 
 
+## Screenshots
+<img src="assest/image/screenshot_1.app.png">
+<img src="assest/image/screenshot_2.app.png">
+<img src="assest/image/screenshot_3.app.png">
 
