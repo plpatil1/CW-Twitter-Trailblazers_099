@@ -1,113 +1,100 @@
-## Algorithm Visualiser
+# Algorithm Visualizer
 
+## Introduction
+The Algorithm Visualizer is a web-based tool designed to help users understand and visualize the workings of various algorithms and data structures. Through interactive animations, it demystifies complex concepts and aids in learning and teaching algorithms.
 
-### Introduction
-
-This project is a web-based Algorithm Visualizer that helps users understand how different sorting algorithms and data structures work. Through interactive animations, users can see how each algorithm works on a set of data and explore the underlying concepts.
-
-This project was a collaborative effort completed in six days (June 11th - 16th, 2024) to showcase the skills we've acquired through past learning experiences.
-
-#### Project Type
-
+## Project Type
 Frontend
 
-#### Deplolyed App
+## Deployed App
+- [Live Demo on Netlify](https://algorithammvisualizerrr.netlify.app/)
 
-Frontend: https://www.netlify.com
-
-#### Directory Structure
-
-
-* [algorithm/](./CW-Twitter-Trailblazers_099/algorithm)
-  * [Sliding_window.js](./CW-Twitter-Trailblazers_099/algorithm/Sliding_window.js)
-  * [binary_search.js](./CW-Twitter-Trailblazers_099/algorithm/binary_search.js)
-  * [bubble_sort.js](./CW-Twitter-Trailblazers_099/algorithm/bubble_sort.js)
-  * [linked_list.js](./CW-Twitter-Trailblazers_099/algorithm/linked_list.js)
-  * [merge_sort.js](./CW-Twitter-Trailblazers_099/algorithm/merge_sort.js)
-  * [queue.js](./CW-Twitter-Trailblazers_099/algorithm/queue.js)
-  * [quick_sort.js](./CW-Twitter-Trailblazers_099/algorithm/quick_sort.js)
-  * [selection_sort.js](./CW-Twitter-Trailblazers_099/algorithm/selection_sort.js)
-  * [soe.js](./CW-Twitter-Trailblazers_099/algorithm/soe.js)
-  * [stack.js](./CW-Twitter-Trailblazers_099/algorithm/stack.js)
-  * [template.js](./CW-Twitter-Trailblazers_099/algorithm/template.js)
-  * [twopointer.js](./CW-Twitter-Trailblazers_099/algorithm/twopointer.js)
-* [assest/](./CW-Twitter-Trailblazers_099/assest)
-  * [css/](./CW-Twitter-Trailblazers_099/assest/css)
-    * [style.css](./CW-Twitter-Trailblazers_099/assest/css/style.css)
-  * [image/](./CW-Twitter-Trailblazers_099/assest/image)
-  * [js/](./CW-Twitter-Trailblazers_099/assest/js)
-    * [Algo_content.js](./CW-Twitter-Trailblazers_099/assest/js/Algo_content.js)
-    * [algo_list.js](./CW-Twitter-Trailblazers_099/assest/js/algo_list.js)
-    * [common.js](./CW-Twitter-Trailblazers_099/assest/js/common.js)
-    * [home.js](./CW-Twitter-Trailblazers_099/assest/js/home.js)
-    * [sidebar.js](./CW-Twitter-Trailblazers_099/assest/js/sidebar.js)
-* [README.md](./CW-Twitter-Trailblazers_099/README.md)
-* [binary_search.html](./CW-Twitter-Trailblazers_099/binary_search.html)
-* [bubble_sort.html](./CW-Twitter-Trailblazers_099/bubble_sort.html)
-* [index.html](./CW-Twitter-Trailblazers_099/index.html)
-* [linked_list.html](./CW-Twitter-Trailblazers_099/linked_list.html)
-* [logo.png](./CW-Twitter-Trailblazers_099/logo.png)
-* [merge_sort.html](./CW-Twitter-Trailblazers_099/merge_sort.html)
-* [queue.html](./CW-Twitter-Trailblazers_099/queue.html)
-* [quick_sort.html](./CW-Twitter-Trailblazers_099/quick_sort.html)
-* [selection_sort.html](./CW-Twitter-Trailblazers_099/selection_sort.html)
-* [sliding_window.html](./CW-Twitter-Trailblazers_099/sliding_window.html)
-* [soe.html](./CW-Twitter-Trailblazers_099/soe.html)
-* [stack.html](./CW-Twitter-Trailblazers_099/stack.html)
-* [template.html](./CW-Twitter-Trailblazers_099/template.html)
-* [twopointer.html](./CW-Twitter-Trailblazers_099/twopointer.html)
+## Directory Structure
+<pre>
+ CW-Twitter-Trailblazers_099/
+ ├─ algorithm/
+ ├─ assets/
+ │ ├─ css/
+ │ ├─ image/
+ │ ├─ js/
+ ├─ index.html
+ ├─ Various HTML files
+ ├─ README.md
+</pre>
 
 
+## Video Walkthrough of the Project
+- [Project Features Walkthrough (7 minutes)](https://drive.google.com/file/d/1xq__ABBkInI2OfLUITdPB95hFDx5G8e0/view)
 
-#### Video Walkthrough of the project
-
-a very short video walkthough of all of the features [7 minutes]:
-https://drive.google.com/file/d/1xq__ABBkInI2OfLUITdPB95hFDx5G8e0/view
-
-
-
-#### Video Walkthrough of the codebase
-
-a very short video walkthough of codebase [6 minutes]:
-https://drive.google.com/file/d/1Xt69tNkWxR--V6XBEHyUVEngScYumLSP/view?usp=sharing
-
-### Features
+## Video Walkthrough of the Codebase
+- [Codebase Walkthrough (6 minutes)](https://drive.google.com/file/d/1Xt69tNkWxR--V6XBEHyUVEngScYumLSP/view?usp=sharing)
 
 
-List out the key features of your application.
+## Features
 
-- Quick Sort
-- Merge Sort
-- Bubble Sort
-- Selection Sort
-- Linked List
-- Stack
-- Queue
-- Binary Search
-- Sliding Window 
-- sieve of Eratosthenes
-
-
-#### Usage
-
-1. Clone the repository using Git
-````git clone https://your-github-repo.com/algorithm-visualizer.git````
-3. Install Bootstrap
-````npm install bootstrap@5.3.3````
-Refer https://getbootstrap.com/docs/5.3/getting-started/download/ for further details.
+- **Algorithm Visualization**: Watch sorting algorithms visually step through their operations.
+- **Interactive Interface**: Easily adjust parameters and input data to see algorithmic changes in real-time.
+- **Multiple Algorithms**: Choose from a variety of sorting algorithms such as
+  - Quick Sort
+  - Merge Sort
+  - Bubble Sort
+  - Selection Sort
+  - Linked List
+  - Stack
+  - Queue
+  - Binary Search
+  - Sliding Window
+  - Sieve of Eratosthenes
+- **Customizable Speed**: Control the speed of visualization to observe algorithms at different rates.
+- **Clear Visualization**: Visual representation of data structures and algorithmic processes.
+- **Responsive Design**: Ensures compatibility and usability across different devices and screen sizes.
+- **No Authentication Required**: Immediate access and usage without the need for authentication.
 
 
-#### Technology Stack
+## Design Decisions and Assumptions
+- **JavaScript for Algorithm Implementation:** Ensures compatibility and ease of use.
+- **Interactive UI:** Built with HTML, CSS, and JavaScript for a seamless user experience.
+- **Minimalistic Design:** Focuses on clarity and user engagement.
 
-- HTML
-- CSS
-- JavaScript
-- Bootstrap
+## Installation & Getting Started
+To set up and run the project locally:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/plpatil1/CW-Twitter-Trailblazers_099.git
+
+2. Navigate to the project directory:
+   ```bash
+   cd CW-Twitter-Trailblazers_099
+
+## Usage
+Open index.html in your web browser to start the visualizer.
+
+## Credentials
+No authentication is required for this application.
+
+## APIs Used
+No external APIs are utilized in this project.
+
+## Technology Stack
+
+### Core Technologies
+- **HTML**: Provides the structure of the web pages.
+- **CSS**: Stylesheets for visual styling and layout.
+- **JavaScript**: Adds interactivity and dynamic behavior to the visualizations.
+
+### Libraries and Frameworks
+- **Bootstrap**: CSS framework for responsive and mobile-first design. [Bootstrap](https://getbootstrap.com/)
+- **D3.js (Data-Driven Documents)**: JavaScript library for manipulating documents based on data. [D3.js](https://d3js.org/)
+- **Animate.css**: CSS library for animations. [Animate.css](https://animate.style/)
+
+### Usage
+
+For the Algorithm Visualizer project, the primary technologies used include HTML, CSS, and JavaScript for creating the foundational structure, styling, and interactivity of the visualizations. These are complemented by Bootstrap for responsive design, D3.js for data-driven manipulation of visuals, and Animate.css for adding dynamic animations.
 
 
-#### Feedback
+## Screenshots
+<img src="assest/image/screenshot_1.app.png">
+<img src="assest/image/screenshot_2.app.png">
+<img src="assest/image/screenshot_3.app.png">
 
-Welcome to the Project! We value your feedback and suggestions.
-Please open an issue if you have any feedback, suggestions, or bug reports. We appreciate your input! 
-
-Thank you for helping us improve the Project!
