@@ -24,7 +24,7 @@ Frontend
 
 
 ## Video Walkthrough of the Project
-- [Project Features Walkthrough (7 minutes)](https://drive.google.com/file/d/1xq__ABBkInI2OfLUITdPB95hFDx5G8e0/view)
+- [Project Features Walkthrough (7 minutes)](https://youtu.be/vz9fANqD3wM?si=qrszzbcUW2hTZ27N)
 
 ## Video Walkthrough of the Codebase
 - [Codebase Walkthrough (6 minutes)](https://drive.google.com/file/d/1Xt69tNkWxR--V6XBEHyUVEngScYumLSP/view?usp=sharing)
